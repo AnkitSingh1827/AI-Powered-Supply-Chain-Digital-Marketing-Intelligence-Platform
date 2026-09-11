@@ -299,9 +299,11 @@ Evaluated on the completely unseen 15% chronological test set (750 shipments). T
 ### Final Test Confusion Matrix
 
 ```
+
                  Predicted On-Time (0)    Predicted Disrupted (1)
 Actual On-Time (0)        185                     112
 Actual Disrupted (1)       89                     364
+
 ```
 
 - **True Positives (364)**: 12 more true disruptions caught early compared to baseline.
@@ -316,6 +318,8 @@ Actual Disrupted (1)       89                     364
 Rather than feeding prediction scores into an opaque second neural network, this platform implements a **transparent, deterministic Rules Engine**. This ensures every marketing action can be clearly explained, defended, and audited by executive leadership.
 
 ```
+
+
                     ┌─────────────────────────┐
                     │ Disruption Risk Score   │
                     └───────────┬─────────────┘
@@ -331,6 +335,9 @@ Rather than feeding prediction scores into an opaque second neural network, this
 • Send Delay Email       Channels                 Campaigns
 • Propose Substitute   • Monitor Stock Buffer   • Standard Ops
   Product (72% conv)
+
+
+
 ```
 
 ### Business Rules Contract
