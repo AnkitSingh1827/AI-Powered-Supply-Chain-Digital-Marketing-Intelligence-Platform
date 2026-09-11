@@ -1,0 +1,29 @@
+{
+  "model": "XGBoost",
+  "tuning_metric": "F1",
+  "tuning_data": "training",
+  "cross_validation": "StratifiedKFold",
+  "cv_folds": 3,
+  "random_search_iterations": 12,
+  "random_state": 42,
+  "best_cv_f1": 0.7664705122799678,
+  "best_params": {
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0,
+    "n_estimators": 300,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.03,
+    "gamma": 0.5,
+    "colsample_bytree": 0.7
+  },
+  "baseline_validation_f1": 0.8091603053435115,
+  "tuned_validation_f1": 0.8052516411378556,
+  "validation_f1_change": -0.003908664205655832,
+  "tuning_improved_f1": false,
+  "final_candidate": "Baseline XGBoost",
+  "test_used_for_tuning": false,
+  "test_used_for_selection": false,
+  "test_prediction_generated": false
+}

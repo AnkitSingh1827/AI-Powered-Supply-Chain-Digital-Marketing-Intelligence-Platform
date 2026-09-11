@@ -1,0 +1,39 @@
+project:
+  name: AI-Supply-Chain-Digital-Marketing
+  version: "1.0"
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  models: models
+  results: results
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  time_based: true
+
+nlp:
+  sentiment_engine: vader
+  bert_optional: true
+  event_types:
+    - war
+    - strike
+    - weather
+    - tariff
+    - port_disruption
+
+model:
+  primary: xgboost
+  baselines:
+    - logistic_regression
+    - random_forest
+  advanced:
+    - xgboost
+    - lightgbm
+
+marketing_rules:
+  high_risk_threshold: 0.70
+  notification_threshold: 0.50

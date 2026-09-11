@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.ipynb_checkpoints/
+
+# Keep raw datasets local unless you explicitly want them in Git
+data/raw/**/*.csv
+
+# Generated data
+data/interim/*.csv
+data/processed/*.csv
+results/**/*.csv
+results/**/*.png
+
+# Model artifacts
+models/**/*.pkl
+models/**/*.joblib

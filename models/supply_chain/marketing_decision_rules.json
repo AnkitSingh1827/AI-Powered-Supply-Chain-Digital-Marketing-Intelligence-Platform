@@ -1,0 +1,28 @@
+{
+  "purpose": "Map final disruption probability to marketing actions.",
+  "source_model": "final_xgboost_candidate.joblib",
+  "probability_source": "Notebook 12 final_test_predictions.csv",
+  "risk_bands": {
+    "Low": {
+      "condition": "probability < 0.50",
+      "marketing_action": "Continue planned campaigns",
+      "budget_action": "Maintain planned spend"
+    },
+    "Medium": {
+      "condition": "0.50 <= probability < 0.75",
+      "marketing_action": "Use disruption-aware targeting",
+      "budget_action": "Prioritize flexible channels and monitor spend"
+    },
+    "High": {
+      "condition": "probability >= 0.75",
+      "marketing_action": "Protect demand and reallocate exposure",
+      "budget_action": "Reduce exposure to affected shipment-dependent products and prioritize resilient alternatives"
+    }
+  },
+  "test_used_for_model_training": false,
+  "test_used_for_hyperparameter_tuning": false,
+  "test_used_for_model_selection": false,
+  "test_used_to_optimize_risk_band_thresholds": false,
+  "marketing_2021_data_row_level_merged_with_test": false,
+  "causal_roi_claim_made": false
+}

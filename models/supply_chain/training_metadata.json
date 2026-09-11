@@ -1,0 +1,20 @@
+{
+  "selected_model": "XGBoost",
+  "selection_metric": "F1",
+  "selection_split": "validation",
+  "selection_artifact": "all_four_model_selection_info.json",
+  "models_compared": [
+    "LightGBM",
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost"
+  ],
+  "training_rows": 3500,
+  "training_features": 590,
+  "validation_rows": 750,
+  "test_rows": 750,
+  "test_used_for_training": false,
+  "test_used_for_selection": false,
+  "test_prediction_generated": false,
+  "training_seconds": 1.2301524999929825
+}

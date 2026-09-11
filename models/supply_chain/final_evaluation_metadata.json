@@ -1,0 +1,18 @@
+{
+  "evaluation_stage": "Notebook 12 - Final Model Evaluation",
+  "model_type": "XGBClassifier",
+  "model_path": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\models\\supply_chain\\final_xgboost_candidate.joblib",
+  "test_rows": 750,
+  "test_features": 74,
+  "test_used_for_training": false,
+  "test_used_for_hyperparameter_tuning": false,
+  "test_used_for_model_selection": false,
+  "test_predictions_generated": true,
+  "primary_report_metric": "F1",
+  "metrics_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\metrics\\final_test_metrics.csv",
+  "confusion_matrix_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\metrics\\final_test_confusion_matrix.csv",
+  "classification_report_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\metrics\\final_test_classification_report.csv",
+  "predictions_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\predictions\\final_test_predictions.csv",
+  "roc_curve_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\figures\\final_test_roc_curve.png",
+  "precision_recall_curve_file": "C:\\Users\\ankit\\Desktop\\Ml-Project\\AI-Supply-Chain-Digital-Marketing-v1\\results\\figures\\final_test_precision_recall_curve.png"
+}

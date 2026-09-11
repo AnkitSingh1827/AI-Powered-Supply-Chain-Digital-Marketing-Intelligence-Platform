@@ -1,0 +1,1 @@
+# Service/schema placeholder for the next implementation stage.\n
